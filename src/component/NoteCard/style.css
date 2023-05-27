@@ -1,0 +1,75 @@
+.cardWrap {
+  padding: 0px 8px;
+  width: 33%;
+  padding-bottom: 20px;
+}
+.card {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card:hover .title{
+  text-decoration: underline;
+}
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  width: 250px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .5s;
+}
+.title:hover {
+  text-decoration: underline;
+}
+.createDate {
+  font-size: 15px;
+  color: #6c757d;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.noteBody {
+  font-size: 15px;
+  color: #6c757d;
+  font-weight: 500;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 41px;
+}
+.actions {
+  display: flex;
+  align-items: center;
+}
+.actionButton {
+  width: 35px;
+  height: 35px;
+  box-shadow: 0px 0px 8px -4px #000;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #000;
+  transition: all 0.5s;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.actionButton:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+@media only screen and (max-width:767px) {
+  .cardWrap{
+      width: 100%;
+  }
+}

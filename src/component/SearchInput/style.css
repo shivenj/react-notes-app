@@ -1,0 +1,30 @@
+.searchWrap {
+    margin-left: 0px;
+    position: relative;
+    width: 100%;
+}
+.searchInput{
+    padding: 12px 10px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    border: 1px solid #ced4da;
+    font-family: "Open Sans", sans-serif;
+    padding-left: 40px;
+}
+.searchIcon {
+    position: absolute;
+    left: 12px;
+    top: 13px;
+    font-size: 22px;
+}
+
+@media only screen and (max-width:767px) {
+    .searchInput{
+        width: 100%;
+    }
+    .searchWrap {
+        margin-left: 0px;
+    }
+}

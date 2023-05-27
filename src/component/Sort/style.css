@@ -1,0 +1,77 @@
+.sortWrap {
+  position: relative;
+}
+.sortIconWrap {
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 0px 8px -4px #000;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #000;
+  transition: all 0.5s;
+  font-size: 18px;
+  margin-left: 20px;
+}
+.sortOverlay{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.sortOptionWrap {
+  position: absolute;
+  left: -45px;
+  top: 47px;
+  width: 170px;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px -4px #000;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.sortOption {
+  padding: 10px;
+  border-bottom: 1px solid #e1eaea;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.sortOption:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.sortOption svg {
+  font-size: 20px;
+  margin-bottom: -5px;
+  margin-right: 10px;
+}
+
+.sortOption.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.sortIconWrap .badge {
+  background-color: #007bff;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: -4px;
+  top: -2px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .sortOptionWrap {
+    left: unset;
+    right: 0px;
+  }
+}
